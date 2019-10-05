@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28D4BFAD2348B7E6009135DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFAC2348B7E6009135DE /* AppDelegate.swift */; };
+		28D4BFAF2348B7E6009135DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFAE2348B7E6009135DE /* SceneDelegate.swift */; };
+		28D4BFB42348B7E6009135DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4BFB22348B7E6009135DE /* Main.storyboard */; };
+		28D4BFB72348B7E6009135DE /* cooltunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFB52348B7E6009135DE /* cooltunes.xcdatamodeld */; };
+		28D4BFB92348B7EA009135DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D4BFB82348B7EA009135DE /* Assets.xcassets */; };
+		28D4BFBC2348B7EA009135DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4BFBA2348B7EA009135DE /* LaunchScreen.storyboard */; };
+		28D4BFC72348B7EA009135DE /* cooltunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFC62348B7EA009135DE /* cooltunesTests.swift */; };
+		28D4BFD22348B7EB009135DE /* cooltunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFD12348B7EB009135DE /* cooltunesUITests.swift */; };
+		28D4BFF62348DB6E009135DE /* ListSongsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF02348DB6E009135DE /* ListSongsPresenter.swift */; };
+		28D4BFF72348DB6E009135DE /* ListSongsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF12348DB6E009135DE /* ListSongsWorker.swift */; };
+		28D4BFF82348DB6E009135DE /* ListSongsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF22348DB6E009135DE /* ListSongsRouter.swift */; };
+		28D4BFF92348DB6E009135DE /* ListSongsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF32348DB6E009135DE /* ListSongsModels.swift */; };
+		28D4BFFA2348DB6E009135DE /* ListSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF42348DB6E009135DE /* ListSongsViewController.swift */; };
+		28D4BFFB2348DB6E009135DE /* ListSongsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BFF52348DB6E009135DE /* ListSongsInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28D4BFC32348B7EA009135DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4BFA12348B7E6009135DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D4BFA82348B7E6009135DE;
+			remoteInfo = cooltunes;
+		};
+		28D4BFCE2348B7EB009135DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4BFA12348B7E6009135DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D4BFA82348B7E6009135DE;
+			remoteInfo = cooltunes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28D4BFA92348B7E6009135DE /* Cool Tunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cool Tunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4BFAC2348B7E6009135DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28D4BFAE2348B7E6009135DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28D4BFB32348B7E6009135DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28D4BFB62348B7E6009135DE /* cooltunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cooltunes.xcdatamodel; sourceTree = "<group>"; };
+		28D4BFB82348B7EA009135DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28D4BFBB2348B7EA009135DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28D4BFBD2348B7EA009135DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D4BFC22348B7EA009135DE /* cooltunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cooltunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4BFC62348B7EA009135DE /* cooltunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cooltunesTests.swift; sourceTree = "<group>"; };
+		28D4BFC82348B7EA009135DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D4BFCD2348B7EB009135DE /* cooltunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cooltunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4BFD12348B7EB009135DE /* cooltunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cooltunesUITests.swift; sourceTree = "<group>"; };
+		28D4BFD32348B7EB009135DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D4BFF02348DB6E009135DE /* ListSongsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsPresenter.swift; sourceTree = "<group>"; };
+		28D4BFF12348DB6E009135DE /* ListSongsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsWorker.swift; sourceTree = "<group>"; };
+		28D4BFF22348DB6E009135DE /* ListSongsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsRouter.swift; sourceTree = "<group>"; };
+		28D4BFF32348DB6E009135DE /* ListSongsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsModels.swift; sourceTree = "<group>"; };
+		28D4BFF42348DB6E009135DE /* ListSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsViewController.swift; sourceTree = "<group>"; };
+		28D4BFF52348DB6E009135DE /* ListSongsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongsInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28D4BFA62348B7E6009135DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFBF2348B7EA009135DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFCA2348B7EB009135DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28D4BFA02348B7E6009135DE = {
+			isa = PBXGroup;
+			children = (
+				28D4BFAB2348B7E6009135DE /* cooltunes */,
+				28D4BFC52348B7EA009135DE /* cooltunesTests */,
+				28D4BFD02348B7EB009135DE /* cooltunesUITests */,
+				28D4BFAA2348B7E6009135DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28D4BFAA2348B7E6009135DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFA92348B7E6009135DE /* Cool Tunes.app */,
+				28D4BFC22348B7EA009135DE /* cooltunesTests.xctest */,
+				28D4BFCD2348B7EB009135DE /* cooltunesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28D4BFAB2348B7E6009135DE /* cooltunes */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFEC2348DAD4009135DE /* Models */,
+				28D4BFED2348DAEA009135DE /* Services */,
+				28D4BFEE2348DAF2009135DE /* Workers */,
+				28D4BFEF2348DAF8009135DE /* Scenes */,
+				28D4BFAC2348B7E6009135DE /* AppDelegate.swift */,
+				28D4BFAE2348B7E6009135DE /* SceneDelegate.swift */,
+				28D4BFB22348B7E6009135DE /* Main.storyboard */,
+				28D4BFB82348B7EA009135DE /* Assets.xcassets */,
+				28D4BFBA2348B7EA009135DE /* LaunchScreen.storyboard */,
+				28D4BFBD2348B7EA009135DE /* Info.plist */,
+				28D4BFB52348B7E6009135DE /* cooltunes.xcdatamodeld */,
+			);
+			path = cooltunes;
+			sourceTree = "<group>";
+		};
+		28D4BFC52348B7EA009135DE /* cooltunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFC62348B7EA009135DE /* cooltunesTests.swift */,
+				28D4BFC82348B7EA009135DE /* Info.plist */,
+			);
+			path = cooltunesTests;
+			sourceTree = "<group>";
+		};
+		28D4BFD02348B7EB009135DE /* cooltunesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFD12348B7EB009135DE /* cooltunesUITests.swift */,
+				28D4BFD32348B7EB009135DE /* Info.plist */,
+			);
+			path = cooltunesUITests;
+			sourceTree = "<group>";
+		};
+		28D4BFEC2348DAD4009135DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D4BFED2348DAEA009135DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		28D4BFEE2348DAF2009135DE /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		28D4BFEF2348DAF8009135DE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFFC2348DB90009135DE /* ListSongs */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		28D4BFFC2348DB90009135DE /* ListSongs */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BFF02348DB6E009135DE /* ListSongsPresenter.swift */,
+				28D4BFF12348DB6E009135DE /* ListSongsWorker.swift */,
+				28D4BFF22348DB6E009135DE /* ListSongsRouter.swift */,
+				28D4BFF32348DB6E009135DE /* ListSongsModels.swift */,
+				28D4BFF42348DB6E009135DE /* ListSongsViewController.swift */,
+				28D4BFF52348DB6E009135DE /* ListSongsInteractor.swift */,
+			);
+			path = ListSongs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28D4BFA82348B7E6009135DE /* cooltunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4BFD62348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunes" */;
+			buildPhases = (
+				28D4BFA52348B7E6009135DE /* Sources */,
+				28D4BFA62348B7E6009135DE /* Frameworks */,
+				28D4BFA72348B7E6009135DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cooltunes;
+			productName = cooltunes;
+			productReference = 28D4BFA92348B7E6009135DE /* Cool Tunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28D4BFC12348B7EA009135DE /* cooltunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4BFD92348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunesTests" */;
+			buildPhases = (
+				28D4BFBE2348B7EA009135DE /* Sources */,
+				28D4BFBF2348B7EA009135DE /* Frameworks */,
+				28D4BFC02348B7EA009135DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D4BFC42348B7EA009135DE /* PBXTargetDependency */,
+			);
+			name = cooltunesTests;
+			productName = cooltunesTests;
+			productReference = 28D4BFC22348B7EA009135DE /* cooltunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28D4BFCC2348B7EB009135DE /* cooltunesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4BFDC2348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunesUITests" */;
+			buildPhases = (
+				28D4BFC92348B7EB009135DE /* Sources */,
+				28D4BFCA2348B7EB009135DE /* Frameworks */,
+				28D4BFCB2348B7EB009135DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D4BFCF2348B7EB009135DE /* PBXTargetDependency */,
+			);
+			name = cooltunesUITests;
+			productName = cooltunesUITests;
+			productReference = 28D4BFCD2348B7EB009135DE /* cooltunesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D4BFA12348B7E6009135DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Luis Zapata";
+				TargetAttributes = {
+					28D4BFA82348B7E6009135DE = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					28D4BFC12348B7EA009135DE = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 28D4BFA82348B7E6009135DE;
+					};
+					28D4BFCC2348B7EB009135DE = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 28D4BFA82348B7E6009135DE;
+					};
+				};
+			};
+			buildConfigurationList = 28D4BFA42348B7E6009135DE /* Build configuration list for PBXProject "cooltunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28D4BFA02348B7E6009135DE;
+			productRefGroup = 28D4BFAA2348B7E6009135DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28D4BFA82348B7E6009135DE /* cooltunes */,
+				28D4BFC12348B7EA009135DE /* cooltunesTests */,
+				28D4BFCC2348B7EB009135DE /* cooltunesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28D4BFA72348B7E6009135DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4BFBC2348B7EA009135DE /* LaunchScreen.storyboard in Resources */,
+				28D4BFB92348B7EA009135DE /* Assets.xcassets in Resources */,
+				28D4BFB42348B7E6009135DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFC02348B7EA009135DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFCB2348B7EB009135DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28D4BFA52348B7E6009135DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4BFF72348DB6E009135DE /* ListSongsWorker.swift in Sources */,
+				28D4BFAD2348B7E6009135DE /* AppDelegate.swift in Sources */,
+				28D4BFF62348DB6E009135DE /* ListSongsPresenter.swift in Sources */,
+				28D4BFB72348B7E6009135DE /* cooltunes.xcdatamodeld in Sources */,
+				28D4BFF92348DB6E009135DE /* ListSongsModels.swift in Sources */,
+				28D4BFFA2348DB6E009135DE /* ListSongsViewController.swift in Sources */,
+				28D4BFFB2348DB6E009135DE /* ListSongsInteractor.swift in Sources */,
+				28D4BFAF2348B7E6009135DE /* SceneDelegate.swift in Sources */,
+				28D4BFF82348DB6E009135DE /* ListSongsRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFBE2348B7EA009135DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4BFC72348B7EA009135DE /* cooltunesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4BFC92348B7EB009135DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4BFD22348B7EB009135DE /* cooltunesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28D4BFC42348B7EA009135DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D4BFA82348B7E6009135DE /* cooltunes */;
+			targetProxy = 28D4BFC32348B7EA009135DE /* PBXContainerItemProxy */;
+		};
+		28D4BFCF2348B7EB009135DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D4BFA82348B7E6009135DE /* cooltunes */;
+			targetProxy = 28D4BFCE2348B7EB009135DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28D4BFB22348B7E6009135DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28D4BFB32348B7E6009135DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28D4BFBA2348B7EA009135DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28D4BFBB2348B7EA009135DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28D4BFD42348B7EB009135DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28D4BFD52348B7EB009135DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28D4BFD72348B7EB009135DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunes;
+				PRODUCT_NAME = "Cool Tunes";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28D4BFD82348B7EB009135DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunes;
+				PRODUCT_NAME = "Cool Tunes";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28D4BFDA2348B7EB009135DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cooltunes.app/cooltunes";
+			};
+			name = Debug;
+		};
+		28D4BFDB2348B7EB009135DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cooltunes.app/cooltunes";
+			};
+			name = Release;
+		};
+		28D4BFDD2348B7EB009135DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cooltunes;
+			};
+			name = Debug;
+		};
+		28D4BFDE2348B7EB009135DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = cooltunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.cooltunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cooltunes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28D4BFA42348B7E6009135DE /* Build configuration list for PBXProject "cooltunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4BFD42348B7EB009135DE /* Debug */,
+				28D4BFD52348B7EB009135DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4BFD62348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4BFD72348B7EB009135DE /* Debug */,
+				28D4BFD82348B7EB009135DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4BFD92348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4BFDA2348B7EB009135DE /* Debug */,
+				28D4BFDB2348B7EB009135DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4BFDC2348B7EB009135DE /* Build configuration list for PBXNativeTarget "cooltunesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4BFDD2348B7EB009135DE /* Debug */,
+				28D4BFDE2348B7EB009135DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28D4BFB52348B7E6009135DE /* cooltunes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28D4BFB62348B7E6009135DE /* cooltunes.xcdatamodel */,
+			);
+			currentVersion = 28D4BFB62348B7E6009135DE /* cooltunes.xcdatamodel */;
+			path = cooltunes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28D4BFA12348B7E6009135DE /* Project object */;
+}
