@@ -14,18 +14,18 @@ import UIKit
 
 protocol ListSongsPresentationLogic
 {
-  func presentSomething(response: ListSongs.Something.Response)
+    func presentSomething(response: ListSongs.Something.Response)
 }
 
 class ListSongsPresenter: ListSongsPresentationLogic
 {
-  weak var viewController: ListSongsDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: ListSongs.Something.Response)
-  {
-    let viewModel = ListSongs.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    weak var viewController: ListSongsDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: ListSongs.Something.Response)
+    {
+        let viewModel = ListSongs.Something.ViewModel()
+        viewController?.displaySomething(viewModel: viewModel)
+    }
 }

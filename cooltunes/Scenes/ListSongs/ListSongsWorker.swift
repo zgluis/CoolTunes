@@ -14,7 +14,7 @@ import UIKit
 
 class ListSongsWorker
 {
-  func doSomeWork()
-  {
-  }
+    func doSomeWork()
+    {
+    }
 }
