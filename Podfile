@@ -7,6 +7,8 @@ target 'cooltunes' do
 
   # Pods for cooltunes
 
+  pod 'Alamofire', '~> 4.9.0'
+
   target 'cooltunesTests' do
     inherit! :search_paths
     # Pods for testing

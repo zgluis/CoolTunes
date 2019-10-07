@@ -14,28 +14,31 @@ import UIKit
 
 protocol ListSongsBusinessLogic
 {
-    func doSomething(request: ListSongs.Something.Request)
+    func search(term: String)
 }
 
 protocol ListSongsDataStore
 {
-    //var name: String { get set }
+    var songs: [Song]? { get set }
 }
 
 class ListSongsInteractor: ListSongsBusinessLogic, ListSongsDataStore
 {
+    
     var presenter: ListSongsPresentationLogic?
     var worker: ListSongsWorker?
-    //var name: String = ""
+    var songs: [Song]?
     
-    // MARK: Do something
-    
-    func doSomething(request: ListSongs.Something.Request)
+    func search(term: String)
     {
         worker = ListSongsWorker()
-        worker?.doSomeWork()
-        
-        let response = ListSongs.Something.Response()
-        presenter?.presentSomething(response: response)
+        worker?.search(term: term) { (response, error) -> Void in
+            if response != nil {
+                self.songs = response?.results
+                self.presenter?.presentResult(response: response!)
+            } else {
+                print(error as Any)
+            }
+        }
     }
 }

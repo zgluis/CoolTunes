@@ -14,18 +14,22 @@ import UIKit
 
 protocol ListSongsPresentationLogic
 {
-    func presentSomething(response: ListSongs.Something.Response)
+    func presentResult(response: ListSongs.Search.Response)
 }
 
 class ListSongsPresenter: ListSongsPresentationLogic
 {
     weak var viewController: ListSongsDisplayLogic?
-    
-    // MARK: Do something
-    
-    func presentSomething(response: ListSongs.Something.Response)
+        
+    func presentResult(response: ListSongs.Search.Response)
     {
-        let viewModel = ListSongs.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+        var displayedSongs: [ListSongs.Search.ViewModel.DisplayedSongs] = []
+        
+        for song in response.results! {
+            let displayedSong = ListSongs.Search.ViewModel.DisplayedSongs.init(artistName: song.artistName ?? "", trackName: song.trackName ?? "")
+            displayedSongs.append(displayedSong)
+        }
+        let viewModel = ListSongs.Search.ViewModel(displayedSongs: displayedSongs)
+        viewController?.displayResults(viewModel: viewModel)
     }
 }

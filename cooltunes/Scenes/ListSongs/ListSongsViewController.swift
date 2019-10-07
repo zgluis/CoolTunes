@@ -14,7 +14,7 @@ import UIKit
 
 protocol ListSongsDisplayLogic: class
 {
-    func displaySomething(viewModel: ListSongs.Something.ViewModel)
+    func displayResults(viewModel: ListSongs.Search.ViewModel)
 }
 
 class ListSongsViewController: UIViewController, ListSongsDisplayLogic
@@ -66,24 +66,64 @@ class ListSongsViewController: UIViewController, ListSongsDisplayLogic
     
     // MARK: View lifecycle
     
+    @IBOutlet weak var resultTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var displayedResult: [ListSongs.Search.ViewModel.DisplayedSongs] = []
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        doSomething()
+        searchBar.delegate = self
+        resultTableView.delegate = self
+        resultTableView.dataSource = self
     }
     
-    // MARK: Do something
+    func search(term: String){
+        interactor?.search(term: term)
+    }
     
-    //@IBOutlet weak var nameTextField: UITextField!
-    
-    func doSomething()
+    func displayResults(viewModel: ListSongs.Search.ViewModel)
     {
-        let request = ListSongs.Something.Request()
-        interactor?.doSomething(request: request)
+        displayedResult = viewModel.displayedSongs
+        DispatchQueue.main.async {
+            self.resultTableView.reloadData()
+        }
+    }
+}
+
+extension ListSongsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.displayedResult.count
     }
     
-    func displaySomething(viewModel: ListSongs.Something.ViewModel)
-    {
-        //nameTextField.text = viewModel.name
+    //Setup cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let displayedSong = self.displayedResult[indexPath.row]
+        var cell = resultTableView.dequeueReusableCell(withIdentifier: "SongCell")
+        if cell == nil {
+          cell = UITableViewCell(style: .value1, reuseIdentifier: "SongCell")
+        }
+        cell?.textLabel?.text = displayedSong.trackName
+        cell?.detailTextLabel?.text = displayedSong.artistName
+        cell?.detailTextLabel?.alpha = 0.5
+        return cell!
     }
+    
+    //Cell tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router?.routeToShowSong()
+    }
+}
+
+extension ListSongsViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if(searchBar.text != nil) {
+            self.search(term: searchBar.text!)
+        }
+    }
+    
 }
